@@ -6,11 +6,11 @@ It leverages [DataStax RAGStack](https://docs.datastax.com/en/ragstack/docs/inde
 ![codespace](./assets/chatbot.png)
 
 What you'll learn:
-- 🤩 How to leverage [DataStax RAGStack](https://docs.datastax.com/en/ragstack/docs/index.html) for production-ready use of the following components:
-    - 🚀 The [Astra DB Vector Store](https://db.new) for Semantic Similarity search
-    - 🦜🔗 [LangChain](https://www.langchain.com) for linking OpenAI and Astra DB
-- 🤖 How to use [OpenAI's Large Language Models](https://platform.openai.com/docs/models) for Q&A style chatbots
-- 👑 How to use [Streamlit](https://streamlit.io) to easily deploy your awesome app to the internet for everyone to see!
+-  How to leverage [DataStax RAGStack](https://docs.datastax.com/en/ragstack/docs/index.html) for production-ready use of the following components:
+    -  The [Astra DB Vector Store](https://db.new) for Semantic Similarity search
+    -  [LangChain](https://www.langchain.com) for linking OpenAI and Astra DB
+-  How to use [OpenAI's Large Language Models](https://platform.openai.com/docs/models) for Q&A style chatbots
+-  How to use [Streamlit](https://streamlit.io) to easily deploy your awesome app to the internet for everyone to see!
 
 - Slides of the presentation can be found [HERE](assets/meetups-slides.pdf)
 
@@ -424,6 +424,38 @@ In this step we'll deploy your awesome app to the internet so everyone can enjoy
 
 ### Set up your Streamlit account
 If you have not do so before, please set up your account on Streamlit. When you already have an account skip to the next step and deploy the app.
+
+1. Head over to [Streamlit.io](https://streamlit.io) and clikc `Sign up`. Then select `Continue with Github`:
+
+    ![Streamlit](./assets/streamlit-0.png)
+
+2. Log in using your Github credentials:
+
+    ![Streamlit](./assets/streamlit-1.png)
+
+3. Now authorize Streamlit:
+
+    ![Streamlit](./assets/streamlit-2.png)
+
+4. And set up your account:
+
+    ![Streamlit](./assets/streamlit-3.png)
+
+### Deploy your app
+
+On the main screen, when logged in, click `New app`.
+
+1. When this is your first deployment, provide additional permissions:
+
+    ![Streamlit](./assets/streamlit-4.png)
+
+2. Now define your application settings. Use YOUR repository name, and name the Main file path as `app_7.py`. Pick a cool App URL as you'll app will be deployed to that:
+
+    ![Streamlit](./assets/streamlit-5.png)
+
+3. Click on Advanced, select Python 3.11 and copy-paste the contents from your `secrets.toml`.
+
+Click Deploy! Wait for a bit and your app is online for everyone to use!
 
 ⛔️ Be aware that this app is public and uses your OpenAI account which will incur cost. You'll want to shield it off by clicking `Settings->Sharing` in the main screen and define the email addresses that are allowed access. In order to enable this, link your Google account.
 
